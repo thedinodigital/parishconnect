@@ -4,7 +4,7 @@ import { Video, Newspaper, Heart, Cross, Phone, BookOpen } from "lucide-react";
 const quickLinks = [
   { label: "Webcam", href: "/webcam", icon: Video },
   { label: "Newsletter", href: "/newsletter", icon: Newspaper },
-  { label: "Donate", href: "/donate", icon: Heart },
+  { label: "Support Us", href: "/donate", icon: Heart },
   { label: "Funerals", href: "/sacraments/funerals", icon: Cross },
   { label: "Contact", href: "/contact", icon: Phone },
   { label: "Sacraments", href: "/sacraments", icon: BookOpen },

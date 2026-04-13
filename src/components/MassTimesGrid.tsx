@@ -72,7 +72,7 @@ export default function MassTimesGrid() {
             to="/mass-times"
             className="inline-flex items-center gap-2 font-sans font-medium text-primary hover:text-primary/80"
           >
-            See full schedule →
+            View all Mass times →
           </Link>
         </div>
       </div>

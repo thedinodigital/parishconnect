@@ -119,7 +119,7 @@ export default function ChurchPage() {
 
               {/* Find Us */}
               <section aria-labelledby="church-find">
-                <h2 id="church-find" className="text-primary mb-6">Find Us</h2>
+                <h2 id="church-find" className="text-primary mb-6">Visit Us</h2>
                 <div className="bg-card border border-border rounded-lg p-6">
                   <p className="font-sans mb-3">{church.address}</p>
                   {church.eircode && <p className="font-sans text-sm text-muted-foreground mb-3">Eircode: {church.eircode}</p>}
@@ -149,7 +149,7 @@ export default function ChurchPage() {
               {/* Notices */}
               {notices.length > 0 && (
                 <section aria-labelledby="church-notices">
-                  <h2 id="church-notices" className="text-primary mb-6">Recent Notices</h2>
+                  <h2 id="church-notices" className="text-primary mb-6">From the Parish</h2>
                   {notices.map((n) => (
                     <article key={n.id} className="border-b border-border py-4 last:border-0">
                       <time dateTime={n.date} className="text-sm font-sans text-muted-foreground">
@@ -167,7 +167,7 @@ export default function ChurchPage() {
             <aside className="lg:col-span-1">
               <div className="lg:sticky lg:top-24 space-y-6">
                 <div className="bg-card border border-border rounded-lg p-6">
-                  <h3 className="text-lg text-primary mb-4">At a Glance</h3>
+                  <h3 className="text-lg text-primary mb-4">About This Church</h3>
                   <dl className="space-y-3 font-sans text-sm">
                     <div>
                       <dt className="text-muted-foreground">Address</dt>
@@ -220,7 +220,7 @@ export default function ChurchPage() {
                     to="/donate"
                     className="block mt-6 text-center px-4 py-3 rounded bg-secondary text-secondary-foreground font-sans font-semibold no-underline hover:bg-secondary/80 transition-colors"
                   >
-                    Donate
+                    Support the Parish
                   </Link>
                 </div>
               </div>

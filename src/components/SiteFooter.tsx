@@ -53,7 +53,7 @@ export default function SiteFooter() {
                   { label: "Sacraments", href: "/sacraments" },
                   { label: "Webcam", href: "/webcam" },
                   { label: "Newsletter", href: "/newsletter" },
-                  { label: "Donate", href: "/donate" },
+                  { label: "Support the Parish", href: "/donate" },
                   { label: "Heritage", href: "/heritage" },
                 ].map((link) => (
                   <li key={link.href}>
@@ -114,6 +114,7 @@ export default function SiteFooter() {
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-6 text-center font-sans text-xs text-primary-foreground/60">
+          <p className="text-sm text-primary-foreground/70 mb-4">Six churches. One parish family. Serving Abbeyleix, Ballyroan, Ballinakill, Knock, Shanahoe and Raheen in the Diocese of Kildare &amp; Leighlin.</p>
           <p>© {new Date().getFullYear()} {parish.name}, Diocese of {parish.diocese}. All rights reserved.</p>
           <p className="mt-1">
             Website by{" "}

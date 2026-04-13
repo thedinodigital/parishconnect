@@ -9,6 +9,8 @@ const navLinks = [
   { label: "Mass Times", href: "/mass-times" },
   { label: "Notices", href: "/notices" },
   { label: "Sacraments", href: "/sacraments" },
+  { label: "Funerals", href: "/funerals" },
+  { label: "Fr Paddy", href: "/our-priest" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -48,7 +50,7 @@ export default function SiteHeader() {
               to="/donate"
               className="ml-2 px-4 py-2 rounded bg-secondary text-secondary-foreground font-sans text-sm font-semibold no-underline hover:bg-secondary/80 transition-colors"
             >
-              Donate
+              Support the Parish
             </Link>
           </nav>
 
@@ -88,7 +90,7 @@ export default function SiteHeader() {
               onClick={() => setMenuOpen(false)}
               className="block px-3 py-3 rounded bg-secondary text-secondary-foreground font-sans text-base font-semibold no-underline text-center mt-2"
             >
-              Donate
+              Support the Parish
             </Link>
           </nav>
         )}
