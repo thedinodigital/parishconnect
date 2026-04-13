@@ -34,8 +34,11 @@ export default function Index() {
           <div className="absolute inset-0 bg-foreground/50" />
           <div className="relative z-10 text-center px-4 py-16">
             <h1 className="text-primary-foreground mb-4 drop-shadow-lg">Abbeyleix Parish</h1>
-            <p className="font-sans text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8 drop-shadow">
-              Serving the communities of Abbeyleix, Ballyroan, Ballinakill, Knock, Shanahoe and Raheen
+            <p className="font-sans text-2xl md:text-3xl text-primary-foreground font-semibold max-w-2xl mx-auto mb-2 drop-shadow">
+              Six churches. One parish family.
+            </p>
+            <p className="font-sans text-base md:text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8 drop-shadow">
+              Serving Abbeyleix, Ballyroan, Ballinakill, Knock, Shanahoe and Raheen
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a

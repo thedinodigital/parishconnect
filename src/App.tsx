@@ -11,6 +11,10 @@ import ChurchesIndex from "./pages/ChurchesIndex";
 import MassTimesPage from "./pages/MassTimesPage";
 import NoticesPage from "./pages/NoticesPage";
 import ContactPage from "./pages/ContactPage";
+import FuneralsPage from "./pages/FuneralsPage";
+import OurPriestPage from "./pages/OurPriestPage";
+import SacramentsPage from "./pages/SacramentsPage";
+import HeritagePage from "./pages/HeritagePage";
 import ComingSoon from "./pages/ComingSoon";
 
 const queryClient = new QueryClient();
@@ -29,12 +33,14 @@ const App = () => (
             <Route path="/mass-times" element={<MassTimesPage />} />
             <Route path="/notices" element={<NoticesPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/sacraments" element={<ComingSoon title="Sacraments" description="Information about Baptism, Communion, Confirmation, Marriage and more." path="/sacraments" />} />
+            <Route path="/funerals" element={<FuneralsPage />} />
+            <Route path="/our-priest" element={<OurPriestPage />} />
+            <Route path="/sacraments" element={<SacramentsPage />} />
             <Route path="/sacraments/:type" element={<ComingSoon title="Sacraments" description="Sacrament information for Abbeyleix Parish." path="/sacraments" />} />
             <Route path="/webcam" element={<ComingSoon title="Webcam" description="Watch Mass live from Abbeyleix Parish." path="/webcam" />} />
-            <Route path="/donate" element={<ComingSoon title="Donate" description="Support Abbeyleix Parish with an online donation." path="/donate" />} />
+            <Route path="/donate" element={<ComingSoon title="Support the Parish" description="Your generosity sustains the life of our parish. Every gift, large or small, helps us care for our six churches and the communities they serve." path="/donate" />} />
             <Route path="/newsletter" element={<ComingSoon title="Newsletter" description="Read the Abbeyleix Parish newsletter." path="/newsletter" />} />
-            <Route path="/heritage" element={<ComingSoon title="Heritage" description="The architectural and historical heritage of Abbeyleix Parish's six churches." path="/heritage" />} />
+            <Route path="/heritage" element={<HeritagePage />} />
             <Route path="/safeguarding" element={<ComingSoon title="Safeguarding" description="Child safeguarding policy for Abbeyleix Parish." path="/safeguarding" />} />
             <Route path="/privacy" element={<ComingSoon title="Privacy & Data Protection" description="Privacy policy and data protection information." path="/privacy" />} />
             <Route path="*" element={<NotFound />} />

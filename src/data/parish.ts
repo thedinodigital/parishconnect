@@ -11,6 +11,8 @@ export const parish = {
   dioceseUrl: "https://www.kandle.ie",
   webcamUrl: "/webcam",
   welcomeMessage:
-    "You are very welcome to Abbeyleix Parish, serving the communities of Abbeyleix, Ballyroan, Ballinakill, Knock, Shanahoe, and Raheen in south County Laois. Whether you are joining us for Sunday Mass, planning a sacrament, or simply curious about the beautiful heritage of our six churches, we hope you will find what you need here. Our doors are always open — please don't hesitate to get in touch.",
+    "You are very welcome to our parish family. These six churches — Abbeyleix, Ballyroan, Ballinakill, Knock, Shanahoe and Raheen — have been gathering places of faith, hope and love for generations. Whether you are joining us for Sunday Mass, marking a sacrament, remembering a loved one, or simply visiting, I pray you find here health of body and peace of mind.",
   welcomeAuthor: "Fr Paddy Byrne, PP",
+  priestBio:
+    "V. Rev. Paddy Byrne is parish priest for the communities of Abbeyleix, Ballinakill and Raheen. A familiar voice in the diocese through his weekly parish blog, Fr Paddy writes regularly on faith, the lives of the saints, and the everyday rhythms of Irish parish life. He is committed to ensuring that every church in the parish — and every parishioner — feels equally seen and equally served.",
 };
