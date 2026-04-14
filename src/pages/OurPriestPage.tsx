@@ -66,10 +66,14 @@ export default function OurPriestPage() {
         </section>
 
         <section>
-          <h2 className="text-primary mb-6">From the Blog</h2>
-          <p className="font-sans text-muted-foreground italic">
-            Fr Paddy's weekly blog reflections will appear here soon.
-          </p>
+          <h2 className="text-primary mb-6">Latest Reflections</h2>
+          <RecentReflections />
+          <Link
+            to="/blog"
+            className="inline-block mt-6 font-sans font-medium text-primary no-underline hover:text-primary/80"
+          >
+            Read all reflections →
+          </Link>
         </section>
       </main>
       <SiteFooter />
