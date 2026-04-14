@@ -1,5 +1,5 @@
 import { parish } from "@/data/parish";
-import priestPlaceholder from "@/assets/priest-placeholder.jpg";
+import priestPhoto from "@/assets/fr-paddy.png";
 
 export default function WelcomeSection() {
   return (
