@@ -16,6 +16,8 @@ import OurPriestPage from "./pages/OurPriestPage";
 import SacramentsPage from "./pages/SacramentsPage";
 import HeritagePage from "./pages/HeritagePage";
 import ComingSoon from "./pages/ComingSoon";
+import BlogIndex from "./pages/BlogIndex";
+import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +42,8 @@ const App = () => (
             <Route path="/webcam" element={<ComingSoon title="Webcam" description="Watch Mass live from Abbeyleix Parish." path="/webcam" />} />
             <Route path="/donate" element={<ComingSoon title="Support the Parish" description="Your generosity sustains the life of our parish. Every gift, large or small, helps us care for our six churches and the communities they serve." path="/donate" />} />
             <Route path="/newsletter" element={<ComingSoon title="Newsletter" description="Read the Abbeyleix Parish newsletter." path="/newsletter" />} />
+            <Route path="/blog" element={<BlogIndex />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/heritage" element={<HeritagePage />} />
             <Route path="/safeguarding" element={<ComingSoon title="Safeguarding" description="Child safeguarding policy for Abbeyleix Parish." path="/safeguarding" />} />
             <Route path="/privacy" element={<ComingSoon title="Privacy & Data Protection" description="Privacy policy and data protection information." path="/privacy" />} />

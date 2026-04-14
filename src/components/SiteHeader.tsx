@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Our Churches", href: "/churches" },
   { label: "Mass Times", href: "/mass-times" },
   { label: "Notices", href: "/notices" },
+  { label: "Reflections", href: "/blog" },
   { label: "Sacraments", href: "/sacraments" },
   { label: "Funerals", href: "/funerals" },
   { label: "Fr Paddy", href: "/our-priest" },

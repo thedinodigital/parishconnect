@@ -181,12 +181,6 @@ export default function ChurchPage() {
                       <dt className="text-muted-foreground">Phone</dt>
                       <dd><a href={`tel:${church.phone.replace(/\s/g, '')}`}>{church.phone}</a></dd>
                     </div>
-                    {(church.slug === "raheen" || church.slug === "shanahoe") && (
-                      <div>
-                        <dt className="text-muted-foreground">Parish Office</dt>
-                        <dd><a href="tel:0578730844">057 873 0844</a></dd>
-                      </div>
-                    )}
                     <div>
                       <dt className="text-muted-foreground">Built</dt>
                       <dd>{church.builtYear}</dd>

@@ -1,8 +1,27 @@
+import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { parish } from "@/data/parish";
+import { getRecentBlogPosts } from "@/data/blogPosts";
 
+function RecentReflections() {
+  const posts = getRecentBlogPosts(3);
+  return (
+    <ul className="space-y-4">
+      {posts.map((post) => (
+        <li key={post.slug}>
+          <Link to={`/blog/${post.slug}`} className="text-foreground no-underline hover:text-primary transition-colors">
+            <span className="font-serif font-semibold">{post.title}</span>
+            <span className="block text-sm font-sans text-muted-foreground mt-0.5">
+              {new Date(post.date).toLocaleDateString("en-IE", { day: "numeric", month: "long", year: "numeric" })}
+            </span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export default function OurPriestPage() {
   return (
@@ -14,13 +33,13 @@ export default function OurPriestPage() {
       />
       <SiteHeader />
       <main id="main-content" className="container section-padding max-w-3xl mx-auto">
-        <div className="text-center mb-10">
-          <h1 className="text-primary">Fr Paddy Byrne, PP</h1>
+        <div className="flex flex-col items-center mb-10">
+          <h1 className="text-primary text-center">Fr Paddy Byrne, PP</h1>
         </div>
 
         <div className="space-y-4 mb-12">
           <p className="font-sans text-foreground/85 leading-relaxed">
-            Fr Paddy Byrne is parish priest for the communities of Abbeyleix,
+            V. Rev. Paddy Byrne is parish priest for the communities of Abbeyleix,
             Ballinakill and Raheen, with pastoral care across all six churches in
             the parish family.
           </p>
@@ -59,10 +78,14 @@ export default function OurPriestPage() {
         </section>
 
         <section>
-          <h2 className="text-primary mb-6">From the Blog</h2>
-          <p className="font-sans text-muted-foreground italic">
-            Fr Paddy's weekly blog reflections will appear here soon.
-          </p>
+          <h2 className="text-primary mb-6">Latest Reflections</h2>
+          <RecentReflections />
+          <Link
+            to="/blog"
+            className="inline-block mt-6 font-sans font-medium text-primary no-underline hover:text-primary/80"
+          >
+            Read all reflections →
+          </Link>
         </section>
       </main>
       <SiteFooter />

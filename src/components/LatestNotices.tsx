@@ -7,9 +7,9 @@ export default function LatestNotices() {
   return (
     <section aria-labelledby="notices-heading" className="section-padding bg-card">
       <div className="container">
-        <h2 id="notices-heading" className="text-center mb-2 text-primary">Parish News &amp; Reflections</h2>
+        <h2 id="notices-heading" className="text-center mb-2 text-primary">Parish News</h2>
         <p className="text-center text-muted-foreground font-sans mb-10 max-w-lg mx-auto italic">
-          News, notices, and weekly reflections from Fr Paddy.
+          News and notices from across the parish.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {recent.map((notice) => (
