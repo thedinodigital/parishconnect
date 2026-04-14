@@ -2,7 +2,7 @@ import SEOHead from "@/components/SEOHead";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { parish } from "@/data/parish";
-import priestPlaceholder from "@/assets/priest-placeholder.jpg";
+
 
 export default function OurPriestPage() {
   return (
@@ -14,15 +14,8 @@ export default function OurPriestPage() {
       />
       <SiteHeader />
       <main id="main-content" className="container section-padding max-w-3xl mx-auto">
-        <div className="flex flex-col items-center mb-10">
-          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-secondary mb-6">
-            <img
-              src={priestPlaceholder}
-              alt="Fr Paddy Byrne, Parish Priest"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <h1 className="text-primary text-center">Fr Paddy Byrne, PP</h1>
+        <div className="text-center mb-10">
+          <h1 className="text-primary">Fr Paddy Byrne, PP</h1>
         </div>
 
         <div className="space-y-4 mb-12">
