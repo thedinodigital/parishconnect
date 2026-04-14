@@ -33,6 +33,7 @@ export default function OurPriestPage() {
       />
       <SiteHeader />
       <main id="main-content" className="container section-padding max-w-3xl mx-auto">
+        <div className="flex flex-col items-center mb-10">
           <h1 className="text-primary text-center">Fr Paddy Byrne, PP</h1>
         </div>
 
