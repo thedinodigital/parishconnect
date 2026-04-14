@@ -8,7 +8,7 @@ export default function WelcomeSection() {
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
           <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden shrink-0 border-4 border-secondary">
             <img
-              src={priestPlaceholder}
+              src={priestPhoto}
               alt="Fr Paddy Byrne, Parish Priest"
               className="w-full h-full object-cover"
               loading="lazy"
