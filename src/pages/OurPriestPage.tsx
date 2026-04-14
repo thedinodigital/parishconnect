@@ -1,8 +1,27 @@
+import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { parish } from "@/data/parish";
-import priestPlaceholder from "@/assets/priest-placeholder.jpg";
+import { getRecentBlogPosts } from "@/data/blogPosts";
+
+function RecentReflections() {
+  const posts = getRecentBlogPosts(3);
+  return (
+    <ul className="space-y-4">
+      {posts.map((post) => (
+        <li key={post.slug}>
+          <Link to={`/blog/${post.slug}`} className="text-foreground no-underline hover:text-primary transition-colors">
+            <span className="font-serif font-semibold">{post.title}</span>
+            <span className="block text-sm font-sans text-muted-foreground mt-0.5">
+              {new Date(post.date).toLocaleDateString("en-IE", { day: "numeric", month: "long", year: "numeric" })}
+            </span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export default function OurPriestPage() {
   return (
