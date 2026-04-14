@@ -20,7 +20,7 @@ export default function OurPriestPage() {
 
         <div className="space-y-4 mb-12">
           <p className="font-sans text-foreground/85 leading-relaxed">
-            V. Rev. Paddy Byrne is parish priest for the communities of Abbeyleix,
+            Fr Paddy Byrne is parish priest for the communities of Abbeyleix,
             Ballinakill and Raheen, with pastoral care across all six churches in
             the parish family.
           </p>
