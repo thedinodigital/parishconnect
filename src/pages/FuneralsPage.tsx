@@ -32,10 +32,10 @@ export default function FuneralsPage() {
               <span className="text-sm font-normal text-muted-foreground ml-2">Fr Paddy Byrne</span>
             </a>
             <a
-              href={`tel:${parish.officePhone.replace(/\s/g, "")}`}
+              href={`tel:${parish.offices.abbeyleixBallyroan.phone.replace(/\s/g, "")}`}
               className="block font-sans text-xl font-semibold text-primary no-underline hover:underline"
             >
-              📞 {parish.officePhone}
+              📞 {parish.offices.abbeyleixBallyroan.phone}
               <span className="text-sm font-normal text-muted-foreground ml-2">Parish Office</span>
             </a>
           </div>
