@@ -59,6 +59,17 @@ export default function Index() {
 
         <MassTimesGrid />
         <ChurchCards />
+
+        {/* About our parish family */}
+        <section aria-labelledby="parish-family-heading" className="section-padding bg-church-green-light">
+          <div className="container max-w-3xl mx-auto text-center">
+            <h2 id="parish-family-heading" className="text-primary mb-4">About Our Parish Family</h2>
+            <p className="font-sans text-foreground/85 leading-relaxed">
+              Abbeyleix Parish is part of a pastoral grouping of three parishes — Abbeyleix, Ballinakill, and Raheen — served together by Fr Paddy Byrne &amp; Fr. Petru Medves, with six churches across south County Laois.
+            </p>
+          </div>
+        </section>
+
         <QuickLinks />
         <LatestNotices />
         <WelcomeSection />
