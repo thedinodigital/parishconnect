@@ -186,7 +186,7 @@ export const churches: Church[] = [
     architecturalStyle: "Modern",
     patron: "St Brigid of Kildare",
     address: "Shanahoe, Co. Laois",
-    phone: "057 873 0844",
+    phone: "057 873 1182",
     coordinates: { lat: 52.9317, lng: -7.4147 },
     shortDescription: "The youngest of the six churches, built by the Shanahoe community in 1974 and marking its golden jubilee in 2024.",
     history: [
@@ -217,7 +217,7 @@ export const churches: Church[] = [
     architecturalStyle: "Gothic Revival",
     patron: "St Fintan of Clonenagh, 6th-century abbot",
     address: "Raheen, Co. Laois",
-    phone: "057 873 0844",
+    phone: "057 873 1182",
     coordinates: { lat: 52.9217, lng: -7.3894 },
     shortDescription: "A Gothic Revival church on a site granted by a Protestant family in 1729 — home to one of Ireland's most moving Penal-era stories.",
     history: [
