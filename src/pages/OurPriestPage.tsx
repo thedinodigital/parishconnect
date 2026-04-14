@@ -52,8 +52,8 @@ export default function OurPriestPage() {
             </p>
             <p>
               <strong>Parish Office:</strong>{" "}
-              <a href={`tel:${parish.officePhone.replace(/\s/g, "")}`} className="text-primary">
-                {parish.officePhone}
+              <a href={`tel:${parish.offices.abbeyleixBallyroan.phone.replace(/\s/g, "")}`} className="text-primary">
+                {parish.offices.abbeyleixBallyroan.phone}
               </a>
             </p>
             <p>

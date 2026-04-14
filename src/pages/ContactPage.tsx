@@ -31,7 +31,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <dt className="text-muted-foreground">Office Phone</dt>
-                  <dd><a href={`tel:${parish.officePhone.replace(/\s/g, '')}`}>{parish.officePhone}</a></dd>
+                  <dd><a href={`tel:${parish.offices.abbeyleixBallyroan.phone.replace(/\s/g, '')}`}>{parish.offices.abbeyleixBallyroan.phone}</a></dd>
                 </div>
                 <div>
                   <dt className="text-muted-foreground">Email</dt>

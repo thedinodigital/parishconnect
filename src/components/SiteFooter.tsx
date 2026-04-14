@@ -13,7 +13,7 @@ export default function SiteFooter() {
             <address className="font-sans text-sm not-italic leading-relaxed text-primary-foreground/80">
               <p className="mb-1">{parish.parishPriest}</p>
               <p className="mb-1">{parish.address}</p>
-              <p className="mb-1">Parish Office: {parish.officePhone}</p>
+              <p className="mb-1">Parish Office: {parish.offices.abbeyleixBallyroan.phone}</p>
               <p className="mb-1">PP: {parish.ppPhone}</p>
               <p>
                 <a href={`mailto:${parish.email}`} className="text-secondary no-underline hover:underline">
