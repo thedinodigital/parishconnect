@@ -8,6 +8,7 @@ import QuickLinks from "@/components/QuickLinks";
 import WelcomeSection from "@/components/WelcomeSection";
 import heroImage from "@/assets/hero-parish.jpg";
 import { Link } from "react-router-dom";
+import { getRecentBlogPosts } from "@/data/blogPosts";
 
 export default function Index() {
   return (
@@ -59,6 +60,44 @@ export default function Index() {
 
         <MassTimesGrid />
         <ChurchCards />
+
+        {/* From Fr Paddy — latest reflections */}
+        <section aria-labelledby="reflections-heading" className="section-padding bg-card">
+          <div className="container">
+            <h2 id="reflections-heading" className="text-center mb-2 text-primary">From Fr Paddy</h2>
+            <p className="text-center text-muted-foreground font-sans mb-10 max-w-lg mx-auto italic">
+              Weekly reflections from our parish priest
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {getRecentBlogPosts(3).map((post) => (
+                <article key={post.slug} className="border border-border rounded-lg p-6 bg-background hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-2 text-sm font-sans text-muted-foreground mb-2">
+                    <time dateTime={post.date}>
+                      {new Date(post.date).toLocaleDateString("en-IE", { day: "numeric", month: "long", year: "numeric" })}
+                    </time>
+                    <span>·</span>
+                    <span>{post.readingTimeMinutes} min</span>
+                  </div>
+                  <h3 className="text-lg mt-1 mb-3 text-foreground font-serif">
+                    <Link to={`/blog/${post.slug}`} className="no-underline text-foreground hover:text-primary transition-colors">
+                      {post.title}
+                    </Link>
+                  </h3>
+                  <p className="text-sm font-sans text-foreground/80 leading-relaxed">{post.excerpt}</p>
+                  <Link to={`/blog/${post.slug}`} className="inline-block mt-4 text-sm font-sans font-medium text-primary no-underline">
+                    Read →
+                  </Link>
+                </article>
+              ))}
+            </div>
+            <div className="text-center mt-8">
+              <Link to="/blog" className="font-sans font-medium text-primary hover:text-primary/80 no-underline">
+                View all reflections →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <QuickLinks />
         <LatestNotices />
         <WelcomeSection />
