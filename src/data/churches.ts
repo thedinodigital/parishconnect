@@ -134,6 +134,10 @@ export const churches: Church[] = [
       { title: "The mother parish", description: "Ballinakill was the historic parish from which Abbeyleix was formed in 1824." },
     ],
     massTimes: [
+      { day: "Mon", time: "11:00" },
+      { day: "Tue", time: "11:00" },
+      { day: "Thu", time: "11:00" },
+      { day: "Fri", time: "11:00" },
       { day: "Sun", time: "11:00" },
     ],
     hasWebcam: false,
@@ -196,7 +200,7 @@ export const churches: Church[] = [
       { title: "Ancient roots", description: "Christian worship at Shanahoe goes back centuries, with earlier chapels recorded on this site." },
     ],
     massTimes: [
-      { day: "Sun", time: "10:00" },
+      { day: "Sun", time: "12:00" },
     ],
     hasWebcam: false,
     hasCemetery: true,
